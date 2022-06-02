@@ -41,6 +41,7 @@ header h1 img{
   padding-top: 80px;
   padding-left: 50px;
   height: 120px;
+  cursor: pointer;
 }
 
 #menu-header{

@@ -1,6 +1,4 @@
-import backLogo from "../../assets/background-logo.svg";
-import logo from "../../assets/logo.svg";
-import userSolid from "../../assets/user-solid 1.svg";
+
 import signal from "../../assets/signal.svg";
 import graphic1 from "../../assets/graphic-1.svg";
 import graphic2 from "../../assets/graphic-2.svg";
@@ -9,23 +7,18 @@ import yellowLogo from "../../assets/yellow-logo.svg";
 import fbLogo from "../../assets/facebook-brands 1.svg";
 import userIcon from "../../assets/circle-user-solid 1.svg";
 import phoneIcon from "../../assets/phone-flip-solid 1.svg";
-import {Link} from "react-router-dom";
 import './styles.css';
+import Header from "../header";
+import {Link} from "react-router-dom";
 
 function Home() {
     return (
         <div>
-            <header>
-                <img id="bg-logo" src={backLogo} alt="bg-logo" />
-                <img id="logo" src={logo} alt="logo" />
-                <h1><Link to="login"><img src={userSolid} alt="user-icon" />Login</Link></h1>
-            </header>
+        <Header />
             <div id="carousel-wrapper">
                 <img id="bg-carousel" src={require("../../assets/carousel-picture.png")} alt="carousel"/>
                 <div id="menu-header">
-                    <p>Inicio</p>
-                    <p>Planes</p>
-                    <p>Contacto</p>
+                    <Link to="new-account"><p>Registrate</p></Link>
                 </div>
                 <button>
                     Reserva
@@ -71,10 +64,16 @@ function Home() {
                         <img src={phoneIcon} alt="phone-icon"/>604-334-4455</a>
                 </div>
                 <div>
-                    <p className="footer-internal-link">Login</p>
-                    <p className="footer-internal-link">Inicio</p>
-                    <p className="footer-internal-link">Planes</p>
-                    <p className="footer-internal-link">Contacto</p>
+                    <Link to="login">
+                        <p className="footer-internal-link">Login</p>
+                    </Link>
+                    <Link to="new-account">
+                        <p className="footer-internal-link">Registrate</p>
+                    </Link>
+                  <Link to="login">
+                      <p className="footer-internal-link">Reserva</p>
+                  </Link>
+
                 </div>
             </footer>
         </div>

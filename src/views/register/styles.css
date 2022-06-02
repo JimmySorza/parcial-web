@@ -1,8 +1,8 @@
-.loginWrapper{
+.registerWrapper{
     background-color: white;
     width: 80%;
     max-width: 500px;
-    height: 500px;
+    height: 600px;
     border-radius: 30px;
     margin: 100px auto 0;
     display: flex;
@@ -10,11 +10,11 @@
     align-items: center;
     justify-content: center;
 }
-.loginWrapper >p{
+.registerWrapper >p{
     font-size: 25px;
     font-weight: bold;
 }
-.loginWrapper > button{
+.registerWrapper > button{
     margin-top: 37px;
     width: 350px;
 }
@@ -28,7 +28,6 @@
 }
 .noLogin{
     font-size: 13px !important;
-    color: black;
 }
 .noLogin:hover{
 color: aqua;
