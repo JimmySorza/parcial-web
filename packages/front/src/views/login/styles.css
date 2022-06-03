@@ -2,7 +2,7 @@
     background-color: white;
     width: 80%;
     max-width: 500px;
-    height: 500px;
+    height: 545px;
     border-radius: 30px;
     margin: 100px auto 0;
     display: flex;
@@ -33,4 +33,8 @@
 .noLogin:hover{
 color: aqua;
     cursor: pointer;
+}
+.errorMessage{
+    color: darkred;
+    font-size: 14px !important;
 }

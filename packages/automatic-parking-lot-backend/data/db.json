@@ -1,0 +1,15 @@
+{
+  "ids": {
+    "User": 7
+  },
+  "models": {
+    "User": {
+      "1": "{\"username\":\"string\",\"password\":\"string\",\"id\":1}",
+      "2": "{\"username\":\"string\",\"password\":\"string\",\"id\":2}",
+      "3": "{\"id\":3,\"username\":\"jimmy\",\"password\":\"string\",\"token\":\"awmbwdxrepp\"}",
+      "4": "{\"username\":\"string\",\"password\":\"string\",\"id\":4}",
+      "5": "{\"id\":5,\"username\":\"string\",\"password\":\"string\",\"token\":\"hey\"}",
+      "6": "{\"username\":\"string\",\"password\":\"string\",\"token\":\"string\",\"id\":6}"
+    }
+  }
+}
