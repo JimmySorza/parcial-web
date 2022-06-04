@@ -5,7 +5,7 @@ function Booking() {
   return (
     <div>
       <Header login />
-      <p>hola</p>
+      <h1>No tienes permisos</h1>
     </div>
   );
 }

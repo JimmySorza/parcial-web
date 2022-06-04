@@ -5,8 +5,9 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { apiURL } from "../../utils/constans";
+import tokenGenerator from "../../utils/token-generator";
 
 const schema = yup.object().shape({
   username: yup
@@ -52,28 +53,22 @@ function Login() {
     };
     try {
       const response = await axios.get(apiURL + "users", { params });
-      console.log(response.data);
       if (response.data.length === 0) {
         setError("El usuario no existe");
       } else {
         await setUser(response.data[0]);
         const userGot = response.data[0];
         if (response.data[0].password === data.password) {
-          console.log("Acceso concedido");
-          const token = Math.random().toString(36).substr(2);
-          console.log({ user });
-          userGot.token = token;
+          userGot.token = tokenGenerator(userGot.username);
           const setToken = await axios.put(
             apiURL + "users/" + userGot.id,
             userGot
           );
-          console.log({ setToken });
           if (setToken.status === 204) {
-            console.log("token seteado");
             localStorage.setItem("user", JSON.stringify(userGot));
             navigate("/booking");
           } else {
-            console.log("error al guardar sesion");
+            setError("error al guardar sesion");
           }
           setError(null);
         } else {
@@ -104,7 +99,6 @@ function Login() {
           />
           <p className="errorMessage">{errors.password?.message}</p>
         </div>
-
         <button type="submit">Entrar</button>
         <Link to="/new-account">
           <p className="noLogin">Aun no estas registrado? Registrate</p>

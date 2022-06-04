@@ -8,32 +8,24 @@ import { apiURL } from "../utils/constans";
 
 const Header = () => {
   let navigate = useNavigate();
-  let localUser = localStorage.getItem("user")
-    ? JSON.parse(localStorage.getItem("user"))
-    : null;
-
+  let localUser = JSON.parse(localStorage.getItem("user"));
+  const isLogged = localUser && localUser !== "undefined";
   const handleLogout = () => {
-    console.log("entra?");
     localStorage.removeItem("user");
     navigate("/");
   };
   useEffect(() => {
-    console.log({ apiURL });
-    if (localUser) {
-      console.log({ localUser });
+    if (localUser && localUser !== "undefined") {
       const fetchData = async () => {
         const response = await axios.get(apiURL + "users/" + localUser.id);
-        console.log({ response });
         if (response.data) {
-          console.log("usuario obtenido");
           if (response.data.token === localUser.token) {
-            console.log("token iguales");
             navigate("/booking");
           } else {
-            console.log("cierra sesion");
+            handleLogout();
           }
         } else {
-          console.log("cierra sesion");
+          handleLogout();
         }
       };
 
@@ -44,7 +36,7 @@ const Header = () => {
     <header>
       <img id="bg-logo" src={backLogo} alt="bg-logo" />
       <img onClick={() => navigate("/")} id="logo" src={logo} alt="logo" />
-      {!localUser && (
+      {!isLogged && (
         <h1>
           <Link to="/login">
             <img src={userSolid} alt="user-icon" />
@@ -52,7 +44,7 @@ const Header = () => {
           </Link>
         </h1>
       )}
-      {localUser && (
+      {isLogged && (
         <>
           <h1>
             <img src={userSolid} alt="user-icon" />
