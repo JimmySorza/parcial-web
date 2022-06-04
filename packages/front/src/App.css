@@ -1,42 +1,42 @@
-body{
+body {
   margin: 0;
   font-family: "Roboto Light", sans-serif;
   background-color: black;
 }
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #E2D900;
+  background-color: #e2d900;
   text-align: center;
   height: 80px;
 }
-header h1{
+header h1 {
   display: flex;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   color: #000;
   padding: 20px;
 }
-header h1:hover{
+header h1:hover {
   color: #ffffff;
   cursor: pointer;
 }
-header h1 img{
+header h1 img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   margin-right: 10px;
 }
 
-#bg-logo{
+#bg-logo {
   position: absolute;
 }
 
-#logo{
+#logo {
   z-index: 1;
   padding-top: 80px;
   padding-left: 50px;
@@ -44,7 +44,7 @@ header h1 img{
   cursor: pointer;
 }
 
-#menu-header{
+#menu-header {
   background: rgba(196, 196, 196, 0.24);
   position: absolute;
   top: 0;
@@ -54,20 +54,20 @@ header h1 img{
   justify-content: space-around;
 }
 
-#menu-header p{
+#menu-header p {
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 17px;
   padding: 10px;
 }
 
-#menu-header p:hover{
+#menu-header p:hover {
   color: #000;
   cursor: pointer;
 }
 
-#bg-carousel{
+#bg-carousel {
   position: absolute;
   top: 0;
   left: 0;
@@ -75,8 +75,8 @@ header h1 img{
   height: 666px;
   z-index: -1;
 }
-button{
-  background-color: #E2D900;
+button {
+  background-color: #e2d900;
   border: none;
   color: #000;
   padding: 10px;
@@ -87,12 +87,12 @@ button{
   cursor: pointer;
   border-radius: 15px;
   width: 120px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
 }
-#graphics-wrapper{
+#graphics-wrapper {
   display: flex;
   justify-content: space-around;
   background: black;
@@ -100,7 +100,7 @@ button{
   width: 100%;
 }
 
-#carousel-wrapper{
+#carousel-wrapper {
   position: relative;
   height: 666px;
   width: 100%;
@@ -108,31 +108,31 @@ button{
   justify-content: center;
   align-items: center;
 }
-.title-graphic{
+.title-graphic {
   color: white;
   font-size: 30px;
 }
 
-.wrapper-graphic{
+.wrapper-graphic {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#bg-parking{
+#bg-parking {
   position: absolute;
   z-index: -1;
   width: 100%;
 }
 
-#signal{
+#signal {
   position: absolute;
   right: 0;
   padding-top: 30px;
   padding-right: 50px;
 }
 
-#text-banner-parking{
+#text-banner-parking {
   color: white;
   position: absolute;
   bottom: 0;
@@ -143,57 +143,63 @@ button{
   text-align: right;
 }
 
-#text-banner-parking > h2{
-  font-family: 'Open Sans', sans-serif;
+#text-banner-parking > h2 {
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
   margin: 0;
 }
 
-#text-banner-parking > p{
-  font-family: 'Open Sans', sans-serif;
+#text-banner-parking > p {
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
 }
 
-#wrapper-banner-parking{
+#wrapper-banner-parking {
   position: relative;
   height: 541px;
   width: 100%;
 }
-footer{
+footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 200px;
   color: white;
 }
-a{
+a {
   text-decoration: none;
   color: white;
 }
 
-footer > div{
+footer > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
-.footer-links{
+.footer-links {
   height: 40px;
   display: flex;
   align-items: center;
 }
-.footer-links > img{
+.footer-links > img {
   height: 28px;
   width: 28px;
   margin-right: 10px;
 }
 
-.footer-links:hover, .footer-internal-link:hover{
-  color: #E2D900;
+.footer-links:hover,
+.footer-internal-link:hover {
+  color: #e2d900;
+  cursor: pointer;
+}
+
+.logout {
+  margin-right: 30px;
   cursor: pointer;
 }

@@ -1,35 +1,35 @@
-.registerWrapper{
-    background-color: white;
-    width: 80%;
-    max-width: 500px;
-    height: 600px;
-    border-radius: 30px;
-    margin: 100px auto 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.registerWrapper {
+  background-color: white;
+  width: 80%;
+  max-width: 500px;
+  height: 600px;
+  border-radius: 30px;
+  margin: 100px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.registerWrapper >p{
-    font-size: 25px;
-    font-weight: bold;
+.registerWrapper > p {
+  font-size: 25px;
+  font-weight: bold;
 }
-.registerWrapper > button{
-    margin-top: 37px;
-    width: 350px;
+.registerWrapper > button {
+  margin-top: 37px;
+  width: 350px;
 }
-.inputsLogin{
-    width: 350px;
-    font-size: 23px;
+.inputsLogin {
+  width: 350px;
+  font-size: 23px;
 }
-.inputsLogin > input{
-    height: 28px;
-    width: 100%;
+.inputsLogin > input {
+  height: 28px;
+  width: 100%;
 }
-.noLogin{
-    font-size: 13px !important;
+.noLogin {
+  font-size: 13px !important;
 }
-.noLogin:hover{
-color: aqua;
-    cursor: pointer;
+.noLogin:hover {
+  color: aqua;
+  cursor: pointer;
 }

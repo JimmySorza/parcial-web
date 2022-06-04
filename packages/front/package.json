@@ -42,6 +42,6 @@
     ]
   },
   "devDependencies": {
-    "miragejs": "^0.1.45"
+    "prettier": "2.6.2"
   }
 }
