@@ -1,7 +1,7 @@
 {
   "ids": {
     "User": 14,
-    "Booking": 4
+    "Booking": 8
   },
   "models": {
     "User": {
@@ -22,7 +22,11 @@
     "Booking": {
       "1": "{\"datetime\":\"2022-06-04T05:33:03.562Z\",\"time\":\"17:00\",\"location\":\"S-3\",\"userId\":\"9\",\"id\":1}",
       "2": "{\"datetime\":\"2022-06-04T05:33:03.562Z\",\"time\":\"13:00\",\"location\":\"A-2\",\"userId\":\"9\",\"id\":2}",
-      "3": "{\"datetime\":\"2022-06-04T05:33:03.562Z\",\"time\":\"string\",\"location\":\"string\",\"userId\":9,\"id\":3}"
+      "3": "{\"datetime\":\"2022-06-04T05:33:03.562Z\",\"time\":\"string\",\"location\":\"string\",\"userId\":9,\"id\":3}",
+      "4": "{\"datetime\":\"2022-06-04T07:48:00.271Z\",\"time\":\"333\",\"location\":\"string\",\"userId\":13,\"id\":4}",
+      "5": "{\"datetime\":\"2022-06-04T07:48:00.271Z\",\"time\":\"222\",\"location\":\"string\",\"userId\":13,\"id\":5}",
+      "6": "{\"datetime\":\"2022-06-14T05:00:00.000Z\",\"time\":\"02:57\",\"location\":\"3-A\",\"userId\":9,\"id\":6}",
+      "7": "{\"datetime\":\"2022-06-20T05:00:00.000Z\",\"time\":\"04:59\",\"location\":\"7-B\",\"userId\":9,\"id\":7}"
     }
   }
 }

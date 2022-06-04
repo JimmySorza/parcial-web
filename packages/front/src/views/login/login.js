@@ -86,7 +86,7 @@ function Login() {
       <Header login />
       <div className="loginWrapper">
         <p>Login</p>
-        {error && <p className="errorMessage">{error}</p>}
+
         <div className="inputsLogin">
           <p>Usuario</p>
           <input {...register("username")} placeholder="username" required />
@@ -100,6 +100,7 @@ function Login() {
           />
           <p className="errorMessage">{errors.password?.message}</p>
         </div>
+        {error && <p className="errorMessage">{error}</p>}
         <button type="submit">Entrar</button>
         <Link to="/new-account">
           <p className="noLogin">Aun no estas registrado? Registrate</p>

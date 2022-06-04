@@ -20,7 +20,7 @@ const Header = () => {
         const response = await axios.get(apiURL + "users/" + localUser.id);
         if (response.data) {
           if (response.data.token === localUser.token) {
-            navigate("/booking");
+            console.log("logged");
           } else {
             handleLogout();
           }

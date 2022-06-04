@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Login from "./views/login/login";
 import Register from "./views/register/register";
 import Booking from "./views/booking/booking";
+import History from "./views/history/history";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="new-account" element={<Register />} />
         <Route path="booking" element={<Booking />} />
+        <Route path="history" element={<History />} />
       </Routes>
     </div>
   );

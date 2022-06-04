@@ -26,7 +26,9 @@ function Home() {
             <p>Registrate</p>
           </Link>
         </div>
-        <button>Reserva</button>
+        <Link to="/booking">
+          <button>Reserva</button>
+        </Link>
       </div>
       <div id="graphics-wrapper">
         <div className="wrapper-graphic">
