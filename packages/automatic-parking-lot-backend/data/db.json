@@ -1,6 +1,7 @@
 {
   "ids": {
-    "User": 12
+    "User": 14,
+    "Booking": 4
   },
   "models": {
     "User": {
@@ -12,9 +13,16 @@
       "6": "{\"username\":\"string\",\"password\":\"string\",\"token\":\"string\",\"id\":6}",
       "7": "{\"username\":\"string\",\"password\":\"string\",\"token\":\"string\",\"id\":7}",
       "8": "{\"username\":\"jesorza\",\"password\":\"123\",\"token\":\"jesorza-4ai93gh50l\",\"id\":8}",
-      "9": "{\"id\":9,\"username\":\"jimmyj9ktYH\",\"password\":\"123\",\"token\":\"jimmyj9ktYH-8grrzvvflhu\"}",
+      "9": "{\"id\":9,\"username\":\"jimmyj9ktYH\",\"password\":\"123\",\"token\":\"jimmyj9ktYH-if3n9zr5t3n\"}",
       "10": "{\"username\":\"jesorza1\",\"password\":\"123\",\"token\":\"jesorza1-du6sngqbrzb\",\"id\":10}",
-      "11": "{\"username\":\"jesorza33\",\"password\":\"123\",\"token\":\"jesorza33-vhe73y1majh\",\"id\":11}"
+      "11": "{\"username\":\"jesorza33\",\"password\":\"123\",\"token\":\"jesorza33-vhe73y1majh\",\"id\":11}",
+      "12": "{\"username\":\"jimmyj9ktYH1\",\"password\":\"123\",\"token\":\"jimmyj9ktYH1-kz5wpknsgj\",\"id\":12}",
+      "13": "{\"username\":\"string\",\"password\":\"string\",\"token\":\"string\",\"id\":13}"
+    },
+    "Booking": {
+      "1": "{\"datetime\":\"2022-06-04T05:33:03.562Z\",\"time\":\"17:00\",\"location\":\"S-3\",\"userId\":\"9\",\"id\":1}",
+      "2": "{\"datetime\":\"2022-06-04T05:33:03.562Z\",\"time\":\"13:00\",\"location\":\"A-2\",\"userId\":\"9\",\"id\":2}",
+      "3": "{\"datetime\":\"2022-06-04T05:33:03.562Z\",\"time\":\"string\",\"location\":\"string\",\"userId\":9,\"id\":3}"
     }
   }
 }

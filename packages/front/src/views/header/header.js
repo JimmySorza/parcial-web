@@ -1,15 +1,15 @@
-import backLogo from "../assets/background-logo.svg";
-import logo from "../assets/logo.svg";
-import userSolid from "../assets/user-solid 1.svg";
+import backLogo from "../../assets/background-logo.svg";
+import logo from "../../assets/logo.svg";
+import userSolid from "../../assets/user-solid 1.svg";
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import axios from "axios";
-import { apiURL } from "../utils/constans";
+import { apiURL } from "../../utils/constans";
+import getLocalUser from "../../utils/getLocalUser";
 
 const Header = () => {
   let navigate = useNavigate();
-  let localUser = JSON.parse(localStorage.getItem("user"));
-  const isLogged = localUser && localUser !== "undefined";
+  const { localUser, isLogged } = getLocalUser();
   const handleLogout = () => {
     localStorage.removeItem("user");
     navigate("/");

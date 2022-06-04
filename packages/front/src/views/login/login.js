@@ -1,5 +1,5 @@
 import "./styles.css";
-import Header from "../header";
+import Header from "../header/header";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -8,6 +8,7 @@ import axios from "axios";
 import { useState } from "react";
 import { apiURL } from "../../utils/constans";
 import tokenGenerator from "../../utils/token-generator";
+import Footer from "../footer/footer";
 
 const schema = yup.object().shape({
   username: yup
@@ -104,6 +105,7 @@ function Login() {
           <p className="noLogin">Aun no estas registrado? Registrate</p>
         </Link>
       </div>
+      <Footer />
     </form>
   );
 }
