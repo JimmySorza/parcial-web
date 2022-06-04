@@ -56,14 +56,12 @@ function Booking() {
   Modal.setAppElement("#root");
 
   const handleDayClick = (value, event) => {
-    console.log(value);
     setCoreSelected(value);
     const dateSelected = dateCoder(value);
     setDateSelected(dateSelected);
     openModal();
   };
   const onSubmitHandler = async () => {
-    console.log({ time, location });
     setError(null);
     const params = {
       datetime: dateCore,
@@ -71,7 +69,6 @@ function Booking() {
       location,
       userId: localUser.id,
     };
-    console.log(params);
     try {
       const createUser = await axios.post(
         apiURL + "users/" + localUser.id + "/bookings",
@@ -82,9 +79,7 @@ function Booking() {
           userId: localUser.id,
         }
       );
-      console.log(createUser.data);
       if (createUser.status === 200) {
-        console.log("creado");
         navigate("/history");
       }
     } catch (e) {

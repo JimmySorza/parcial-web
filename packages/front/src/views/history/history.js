@@ -39,7 +39,6 @@ function History() {
       const response = await axios.get(apiURL + "users/" + localUser.id, {
         params,
       });
-      console.log({ response });
       if (response.data) {
         const { data } = response;
         if (data.bookings) {
